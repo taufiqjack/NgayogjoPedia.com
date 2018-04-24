@@ -43,6 +43,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -66,7 +94,164 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="css\util.css" />
+    <Content Include="images\avatar-01.jpg" />
+    <Content Include="images\avatar-02.jpg" />
+    <Content Include="images\avatar-03.jpg" />
+    <Content Include="images\avatar-04.jpg" />
+    <Content Include="images\avatar-05.jpg" />
+    <Content Include="images\bg-01.jpg" />
+    <Content Include="images\bg-cover-video-01.jpg" />
+    <Content Include="images\bg-cover-video-02.jpg" />
+    <Content Include="images\bg-event-01.jpg" />
+    <Content Include="images\bg-event-02.jpg" />
+    <Content Include="images\bg-event-03.jpg" />
+    <Content Include="images\bg-event-04.jpg" />
+    <Content Include="images\bg-intro-01.jpg" />
+    <Content Include="images\bg-intro-02.jpg" />
+    <Content Include="images\bg-intro-03.jpg" />
+    <Content Include="images\bg-intro-04.jpg" />
+    <Content Include="images\bg-intro-05.jpg" />
+    <Content Include="images\bg-title-page-01.jpg" />
+    <Content Include="images\bg-title-page-02.jpg" />
+    <Content Include="images\bg-title-page-03.jpg" />
+    <Content Include="images\blog-01.jpg" />
+    <Content Include="images\blog-02.jpg" />
+    <Content Include="images\blog-03.jpg" />
+    <Content Include="images\blog-04.jpg" />
+    <Content Include="images\blog-05.jpg" />
+    <Content Include="images\blog-06.jpg" />
+    <Content Include="images\blog-07.jpg" />
+    <Content Include="images\blog-08.jpg" />
+    <Content Include="images\blog-09.jpg" />
+    <Content Include="images\blog-10.jpg" />
+    <Content Include="images\blog-11.jpg" />
+    <Content Include="images\blog-12.jpg" />
+    <Content Include="images\blog-13.jpg" />
+    <Content Include="images\blog-14.jpg" />
+    <Content Include="images\blog-15.jpg" />
+    <Content Include="images\booking-01.jpg" />
+    <Content Include="images\booking-02.jpg" />
+    <Content Include="images\booking-03.jpg" />
+    <Content Include="images\bregada-kraton-jogja.jpg" />
+    <Content Include="images\bunker-kaliadem.jpg" />
+    <Content Include="images\dinner-01.jpg" />
+    <Content Include="images\dinner-02.jpg" />
+    <Content Include="images\dinner-03.jpg" />
+    <Content Include="images\dinner-04.jpg" />
+    <Content Include="images\dinner-05.jpg" />
+    <Content Include="images\dinner-06.jpg" />
+    <Content Include="images\DSCN0125.JPG" />
+    <Content Include="images\DSCN0191.JPG" />
+    <Content Include="images\event-01.jpg" />
+    <Content Include="images\event-02.jpg" />
+    <Content Include="images\event-03.jpg" />
+    <Content Include="images\event-04.jpg" />
+    <Content Include="images\event-05.jpg" />
+    <Content Include="images\event-06.jpg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\gudeg-jogja.jpg" />
+    <Content Include="images\header-menu-01.jpg" />
+    <Content Include="images\header-menu-02.jpg" />
+    <Content Include="images\heading-page-01.jpg" />
+    <Content Include="images\heading-page-02.jpg" />
+    <Content Include="images\heading-page-03.jpg" />
+    <Content Include="images\heading-page-04.jpg" />
+    <Content Include="images\icon-position-map.png" />
+    <Content Include="images\IMG_20170921_123322_HDR.jpg" />
+    <Content Include="images\intro-01.jpg" />
+    <Content Include="images\intro-02.jpg" />
+    <Content Include="images\intro-03.jpg" />
+    <Content Include="images\intro-04.jpg" />
+    <Content Include="images\intro-05.jpg" />
+    <Content Include="images\lunch-01.jpg" />
+    <Content Include="images\lunch-02.jpg" />
+    <Content Include="images\lunch-03.jpg" />
+    <Content Include="images\lunch-04.jpg" />
+    <Content Include="images\lunch-05.jpg" />
+    <Content Include="images\lunch-06.jpg" />
+    <Content Include="images\master-slides-01.jpg" />
+    <Content Include="images\master-slides-02.jpg" />
+    <Content Include="images\master-slides-03.jpg" />
+    <Content Include="images\master-slides-04.jpg" />
+    <Content Include="images\master-slides-05.jpg" />
+    <Content Include="images\master-slides-06.jpg" />
+    <Content Include="images\master-slides-07.jpg" />
+    <Content Include="images\master-slides-08.jpg" />
+    <Content Include="images\our-menu-01.jpg" />
+    <Content Include="images\our-menu-02.jpg" />
+    <Content Include="images\our-menu-03.jpg" />
+    <Content Include="images\our-menu-04.jpg" />
+    <Content Include="images\our-menu-05.jpg" />
+    <Content Include="images\our-menu-06.jpg" />
+    <Content Include="images\our-menu-07.jpg" />
+    <Content Include="images\our-menu-08.jpg" />
+    <Content Include="images\our-menu-09.jpg" />
+    <Content Include="images\our-menu-10.jpg" />
+    <Content Include="images\our-menu-11.jpg" />
+    <Content Include="images\our-menu-12.jpg" />
+    <Content Include="images\our-menu-13.jpg" />
+    <Content Include="images\our-menu-14.jpg" />
+    <Content Include="images\our-menu-15.jpg" />
+    <Content Include="images\our-menu-16.jpg" />
+    <Content Include="images\our-menu-17.jpg" />
+    <Content Include="images\our-menu-18.jpg" />
+    <Content Include="images\our-menu-19.jpg" />
+    <Content Include="images\our-menu-20.jpg" />
+    <Content Include="images\our-story-01.jpg" />
+    <Content Include="images\our-story-02.jpg" />
+    <Content Include="images\our-story-03.jpg" />
+    <Content Include="images\parangtritis.jpg" />
+    <Content Include="images\photo-gallery-01.jpg" />
+    <Content Include="images\photo-gallery-02.jpg" />
+    <Content Include="images\photo-gallery-03.jpg" />
+    <Content Include="images\photo-gallery-04.jpg" />
+    <Content Include="images\photo-gallery-05.jpg" />
+    <Content Include="images\photo-gallery-06.jpg" />
+    <Content Include="images\photo-gallery-07.jpg" />
+    <Content Include="images\photo-gallery-08.jpg" />
+    <Content Include="images\photo-gallery-09.jpg" />
+    <Content Include="images\photo-gallery-10.jpg" />
+    <Content Include="images\photo-gallery-11.jpg" />
+    <Content Include="images\photo-gallery-12.jpg" />
+    <Content Include="images\photo-gallery-13.jpg" />
+    <Content Include="images\photo-gallery-14.jpg" />
+    <Content Include="images\photo-gallery-15.jpg" />
+    <Content Include="images\photo-gallery-16.jpg" />
+    <Content Include="images\photo-gallery-17.jpg" />
+    <Content Include="images\photo-gallery-18.jpg" />
+    <Content Include="images\photo-gallery-19.jpg" />
+    <Content Include="images\photo-gallery-20.jpg" />
+    <Content Include="images\photo-gallery-21.jpg" />
+    <Content Include="images\photo-gallery-thumb-01.jpg" />
+    <Content Include="images\photo-gallery-thumb-02.jpg" />
+    <Content Include="images\photo-gallery-thumb-03.jpg" />
+    <Content Include="images\photo-gallery-thumb-04.jpg" />
+    <Content Include="images\photo-gallery-thumb-05.jpg" />
+    <Content Include="images\photo-gallery-thumb-06.jpg" />
+    <Content Include="images\photo-gallery-thumb-07.jpg" />
+    <Content Include="images\photo-gallery-thumb-08.jpg" />
+    <Content Include="images\photo-gallery-thumb-09.jpg" />
+    <Content Include="images\photo-gallery-thumb-10.jpg" />
+    <Content Include="images\photo-gallery-thumb-11.jpg" />
+    <Content Include="images\photo-gallery-thumb-12.jpg" />
+    <Content Include="images\photo-gallery-thumb-13.jpg" />
+    <Content Include="images\photo-gallery-thumb-14.jpg" />
+    <Content Include="images\photo-gallery-thumb-15.jpg" />
+    <Content Include="images\photo-gallery-thumb-16.jpg" />
+    <Content Include="images\photo-gallery-thumb-17.jpg" />
+    <Content Include="images\photo-gallery-thumb-18.jpg" />
+    <Content Include="images\photo-gallery-thumb-19.jpg" />
+    <Content Include="images\photo-gallery-thumb-20.jpg" />
+    <Content Include="images\photo-gallery-thumb-21.jpg" />
+    <Content Include="images\slide1-01.jpg" />
+    <Content Include="images\slide1-02.jpg" />
+    <Content Include="images\slide1-03.jpg" />
     <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,11 +260,27 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="images\clock-icon.png" />
+    <Content Include="images\ICON-nP.png" />
+    <Content Include="images\logo-nP.png" />
+    <Content Include="images\map-icon.png" />
+    <Content Include="images\nP1.png" />
+    <Content Include="images\pattern1.png" />
+    <Content Include="images\pattern2.png" />
+    <Content Include="images\pattern3.png" />
+    <Content Include="images\phone-icon.png" />
+    <Content Include="images\video-16-9.jpg" />
+    <Content Include="index.html" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
+    <Content Include="wisata-pantai.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
